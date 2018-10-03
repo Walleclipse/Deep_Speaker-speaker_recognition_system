@@ -1,4 +1,4 @@
-#  Keras implementation of "Deep Speaker: an End-to-End Neural Speaker Embedding System" (speaker recognition project)
+#  Deep Speaker: speaker recognition system
 
 Data Set: librispeech  
 Reference paper: "Deep Speaker: an End-to-End Neural Speaker Embedding System" https://arxiv.org/pdf/1705.02304.pdf  
