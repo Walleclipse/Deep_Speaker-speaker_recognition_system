@@ -7,21 +7,21 @@ Reference code : https://github.com/philipperemy/deep-speaker (Thanks Philippe R
 This code was trained using librispeech-train-clean dataset, tested using librispeech-test-clean dataset. In my code librispeech dataset shows ~5% EER using CNN.   
   
 ## About Code
-Train.py  
+train.py  
 This is the main file, which can be trained after running, and saves the model and test every time a certain number of steps.  
-Models.py  
+models.py  
 This is the module for creating the model. It consists of three models, the CNN model (consistent with the paper), the GRU model (consistent with the paper), and the third model is my own simplified simple_cnn model.  
-Select_batch.py  
+select_batch.py  
 Choose the optimal batch feed to the network. This is one of the core of this experiment.   
-Triplet_loss.py  
+triplet_loss.py  
 This is the module for calculating the triplet-loss for network training.  
-Test_model.py  
+test_model.py  
 This is a module that tests the model and tests parameters such as eer.   
-Eval_matrics.py  
+eval_matrics.py  
 Input prediction and labels can be calculated, equal error rate, f-measure, accuracy and other indicators  
-pertaining.py  
+pretaining.py  
 This is a module for pre-training of softmax classification.  
-Pre_process.py  
+pre_process.py  
 This is to read the voice, filter the mute, extract the fbank feature, and save the module in .npy format.  
   
 ## Results  
