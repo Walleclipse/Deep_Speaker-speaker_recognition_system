@@ -25,6 +25,8 @@ pre_process.py
 This is to read the voice, filter the mute, extract the fbank feature, and save the module in .npy format.  
   
 ## Results  
-This code was trained using librispeech-train-clean dataset, tested using librispeech-test-clean dataset. In my code, librispeech dataset shows ~5% EER using CNN.   
-  
-If you want to know more details, please read 'deep_speaker实验报告.pdf'(Chinese). If you want to read details in English ，please contact me.  
+This code was trained using librispeech-train-clean dataset, tested using librispeech-test-clean dataset. In my code, librispeech dataset shows ~5% EER using CNN. 
+<div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://github.com/Walleclipse/Deep_Speaker-speaker_recognition_system/raw/master/demo/loss.png"  width="400" ></div>
+<div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://github.com/Walleclipse/Deep_Speaker-speaker_recognition_system/raw/master/demo/EER.png" width="400" ></div>  
+    
+  If you want to know more details, please read 'deep_speaker实验报告.pdf'(Chinese). If you want to read details in English ，please contact me.  
