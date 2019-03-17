@@ -1,6 +1,6 @@
 #  Deep Speaker: speaker recognition system
 
-Data Set: librispeech  
+Data Set: [LibriSpeech](http://www.openslr.org/12/)  
 Reference paper: "Deep Speaker: an End-to-End Neural Speaker Embedding System" https://arxiv.org/pdf/1705.02304.pdf  
 Reference code : https://github.com/philipperemy/deep-speaker (Thanks Philippe Rémy. I have greatly modified the code during the experiment, but the theme is still similar.)  
   
