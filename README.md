@@ -6,7 +6,7 @@ Reference code : https://github.com/philipperemy/deep-speaker (Thanks to Philipp
   
 This code was trained on librispeech-train-clean dataset, tested on librispeech-test-clean dataset. In my code, librispeech dataset shows ~5% EER with CNN model.   
   
-## About Code
+## About the Code
 train.py  
 This is the main file, contains training, evaluation and save-model function  
 models.py  
@@ -24,7 +24,7 @@ This is for pre-training on softmax classification loss.
 pre_process.py  
 Read the utterance, filterer out the mute, extract the fbank feature and save the module in .npy format. 
   
-## Results  
+## Experimental Results  
 This code was trained on librispeech-train-clean dataset, tested on librispeech-test-clean dataset. In my code, librispeech dataset shows ~5% EER with CNN model. 
   
 <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://github.com/Walleclipse/Deep_Speaker-speaker_recognition_system/raw/master/demo/loss.png"  width="400" ></div>
