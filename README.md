@@ -22,7 +22,7 @@ For calculating equal error rate, f-measure, accuracy, and other metrics
 pretaining.py  
 This is for pre-training on softmax classification loss.  
 pre_process.py  
-Read the utterance, filterer out the mute, extract the fbank feature and save the module in .npy format. 
+Read the utterance, filter out the mute, extract the fbank feature and save the module in .npy format. 
   
 ## Experimental Results  
 This code was trained on librispeech-train-clean dataset, tested on librispeech-test-clean dataset. In my code, librispeech dataset shows ~5% EER with CNN model. 
