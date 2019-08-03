@@ -1,33 +1,33 @@
 #  Deep Speaker: speaker recognition system
 
 Data Set: [LibriSpeech](http://www.openslr.org/12/)  
-Reference paper: "Deep Speaker: an End-to-End Neural Speaker Embedding System" https://arxiv.org/pdf/1705.02304.pdf  
-Reference code : https://github.com/philipperemy/deep-speaker (Thanks Philippe Rémy. I have greatly modified the code during the experiment, but the theme is still similar.)  
+Reference paper: [Deep Speaker: an End-to-End Neural Speaker Embedding System](https://arxiv.org/pdf/1705.02304.pdf)  
+Reference code : https://github.com/philipperemy/deep-speaker (Thanks to Philippe Rémy)  
   
-This code was trained using librispeech-train-clean dataset, tested using librispeech-test-clean dataset. In my code librispeech dataset shows ~5% EER using CNN.   
+This code was trained on librispeech-train-clean dataset, tested on librispeech-test-clean dataset. In my code, librispeech dataset shows ~5% EER with CNN model.   
   
 ## About Code
 train.py  
-This is the main file. This file train the model,then save the model and evaluate the result every specific steps.  
+This is the main file, contains training, evaluation and save-model function  
 models.py  
-This is the implementation of model used in this project. It contains three models, the CNN model (similar with the paper's CNN), the GRU model (similar with the paper's GRU), and the third model is simplified simple_cnn model.  
+The neural network used for the experiment. This file contains three models, CNN model (same with the paper’s CNN), GRU model (same with the paper’s GRU), simple_cnn model. simple_cnn model has similar performance with the original CNN model, but the number of trained parameter dropped from 24M to 7M. 
 select_batch.py  
-Choose the optimal batch feed to the network. This is one of the core of this experiment.   
+Choose the optimal batch feed to the network. This is one of the cores  of this experiment.   
 triplet_loss.py  
-This is the code for calculating the triplet-loss for network training.  
+This is a code to calculate triplet-loss for network training. Implementation is the same as paper.  
 test_model.py  
-This is a code that evaluate (test) the model, Such as eer...   
+This is a code that evaluates (test) the model, in terms of EER...   
 eval_matrics.py  
-This file contains equal error rate, f-measure, accuracy and other metrics used in evaluation part. 
+For calculating equal error rate, f-measure, accuracy, and other metrics 
 pretaining.py  
-This is a code for pre-training of softmax classification.  
+This is for pre-training on softmax classification loss.  
 pre_process.py  
-This code implemented for read the voice-data, filter the mute, extract the fbank feature, and save the extracted-features as .npy format.  
+Read the utterance, filterer out the mute, extract the fbank feature and save the module in .npy format. 
   
 ## Results  
-This code was trained using librispeech-train-clean dataset, tested using librispeech-test-clean dataset. In my code, librispeech dataset shows ~5% EER using CNN. 
+This code was trained on librispeech-train-clean dataset, tested on librispeech-test-clean dataset. In my code, librispeech dataset shows ~5% EER with CNN model. 
   
 <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://github.com/Walleclipse/Deep_Speaker-speaker_recognition_system/raw/master/demo/loss.png"  width="400" ></div>
 <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://github.com/Walleclipse/Deep_Speaker-speaker_recognition_system/raw/master/demo/EER.png" width="400" ></div>  
     
-  If you want to know more details, please read 'deep_speaker实验报告.pdf'(Chinese). If you want to read details in English, please contact me.  
+  If you want to know more details, please read [deep_speaker_report.pdf](deep_speaker_report.pdf)(English) or [deep_speaker实验报告.pdf](deep_speaker实验报告.pdf)(Chinese). 
