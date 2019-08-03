@@ -31,4 +31,4 @@ This code was trained on librispeech-train-clean dataset, tested on librispeech-
 <div style="float:left;border:solid 1px 000;margin:2px;"><img src="https://github.com/Walleclipse/Deep_Speaker-speaker_recognition_system/raw/master/demo/EER.png" width="400" ></div>  
 
 ## More Details  
-  If you want to know more details, please read [deep_speaker_report.pdf](deep_speaker_report.pdf)(English) or [deep_speaker实验报告.pdf](deep_speaker实验报告.pdf)(Chinese). 
+  If you want to know more details, please read [deep_speaker_report.pdf](deep_speaker_report.pdf) (English) or [deep_speaker实验报告.pdf](deep_speaker实验报告.pdf) (Chinese). 
