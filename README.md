@@ -7,7 +7,7 @@ Reference code : https://github.com/philipperemy/deep-speaker (Thanks to Philipp
 This code was trained on librispeech-train-clean dataset, tested on librispeech-test-clean dataset. In my code, librispeech dataset shows ~5% EER with CNN model.   
   
 ## About the Code
-`train.py`
+`train.py`  
 This is the main file, contains training, evaluation and save-model function  
 `models.py`  
 The neural network used for the experiment. This file contains three models, CNN model (same with the paper’s CNN), GRU model (same with the paper's GRU), simple_cnn model. simple_cnn model has similar performance with the original CNN model, but the number of trained parameter dropped from 24M to 7M. 
