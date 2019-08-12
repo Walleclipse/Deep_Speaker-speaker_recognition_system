@@ -119,6 +119,9 @@ def main(libri_dir=c.DATASET_DIR):
         x, _ = select_batch.best_batch(model, batch_size=c.BATCH_SIZE)
         print("select_batch_time:", time() - orig_time)
         y = np.random.uniform(size=(x.shape[0], 1))
+        # If "ValueError: Error when checking target: expected ln to have shape (None, 512) but got array with shape (96, 1)"
+        # please modify line 121 to following line
+        # y = np.random.uniform(size=(x.shape[0], 512))
         logging.info('== Presenting step #{0}'.format(grad_steps))
         orig_time = time()
         loss = model.train_on_batch(x, y)
