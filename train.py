@@ -114,7 +114,11 @@ def main(libri_dir=c.DATASET_DIR):
     logging.info('Starting training...')
     lasteer = 10
     eer = 1
-    while True:
+    
+    Num_Iter = 1000000
+    current_iter = 0
+    while current_iter <Num_Iter:
+        current_iter += 1
         orig_time = time()
         x, _ = select_batch.best_batch(model, batch_size=c.BATCH_SIZE)
         print("select_batch_time:", time() - orig_time)
