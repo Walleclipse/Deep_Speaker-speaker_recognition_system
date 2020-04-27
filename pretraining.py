@@ -129,7 +129,10 @@ def main():
 
     orig_time = time()
 
-    while True:
+    Num_Iter = 100000
+    current_iter = 0
+    while current_iter <Num_Iter:
+        current_iter += 1
         orig_time = time()
         x_train, y_train = batchloader.__next__()
         [loss, acc] = model.train_on_batch(x_train, y_train)  # return [loss, acc]
