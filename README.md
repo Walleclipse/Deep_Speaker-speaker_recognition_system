@@ -42,7 +42,7 @@ Extract feature and preprocessing: `python preprocess.py`.
 If you want to train your model with Triplet Loss: `python train.py`.    
 If you want to pretrain with softmax loss first: `python pretraining.py` then `python train.py`.    
 Note: If you want to pretrain or not, you need to set `PRE_TRAIN`(in `constants.py`) flag with `True` or `False`.   
-(The training process in `python train.py` is an endless loop, please add stop-training conditions or kill the training process according to your own requirements.)
+
 4. Evaluation.  
 Evaluate the model in terms of EER: `test_model.py`.    
 Note: During training,  `train.py` also evaluates the model.     
